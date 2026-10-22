@@ -1,0 +1,17 @@
+# Seed rules: merchants you already know, created as Actual rules on the first
+# run, before the model is asked about anything (even for payees matching
+# SKIP_PAYEES).
+#
+# Format:  payee name: category name
+# Both are matched case-insensitively against the names in your budget. The
+# payee must exist in Actual (as it appears in the Payee column); an entry
+# whose payee hasn't appeared yet is simply tried again on later runs.
+# Each entry is created once: if you delete the rule in Actual, it is not
+# recreated from here, but the model then decides that payee on the next run
+# like any other. Add the payee to SKIP_PAYEES to leave it alone.
+# Quote names that contain a colon or start with a special character.
+
+Metro Transit: Transport
+Northwind Energy: Utilities
+Oakwood Apartments: Housing
+"Streamly: Premium": Subscriptions

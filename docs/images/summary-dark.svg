@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="376" viewBox="0 0 760 376" role="img" aria-labelledby="t d">
+<title id="t">Example run summary</title>
+<desc id="d">A Telegram message from actual-autocat after a run. Budget: 5 new rules, 10 transactions categorized • Blue Bottle → Coffee &amp; Snacks: coffee roaster and café chain (3) • Metro Transit → Transport: city bus and rail fares (4) • Lakeside Cinema → Entertainment: movie theater (1) • Corner Mart → Miscellaneous: varies, convenience store (1) • Northwind Energy → Utilities: from rules.yaml (1) Not decided: 1: Harbor Property Group (no JSON object with a category in the reply) Left for your rules: 2 transactions Fix a rule in Actual → Rules.</desc>
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;fill:#f0f6fc}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}
+.m{fill:#9198a1}
+.a{fill:#4493f8}
+.ok{fill:#3fb950}
+.w{fill:#d29922}
+.b{font-weight:600}
+.eb{font-size:10.5px;font-weight:700;letter-spacing:.06em;fill:#9198a1}
+.num{font-size:10.5px;font-weight:700;fill:#0d1117}
+.card{fill:#0d1117;stroke:#3d444d}
+.arr{fill:none;stroke:#656c76;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+</style>
+<rect x="0.5" y="0.5" width="759" height="375" rx="16" fill="#10161d" stroke="#3d444d"/>
+<circle cx="44" cy="36" r="18" fill="#4493f8"/>
+<text x="44" y="41" font-size="13" text-anchor="middle" class="b" style="fill:#0d1117">AC</text>
+<text x="72" y="32" font-size="14.5" class="b">actual-autocat</text>
+<text x="72" y="50" font-size="12" class="m">bot</text>
+<line x1="0.5" y1="71.5" x2="759.5" y2="71.5" stroke="#3d444d"/>
+<path d="M50 90 H662 A14 14 0 0 1 676 104 V340 A14 14 0 0 1 662 354 H28 C34 350 36 344 36 336 V104 A14 14 0 0 1 50 90 Z" fill="#1c2530" stroke="#2b3542"/>
+<text x="54" y="120" font-size="14" xml:space="preserve">Budget: 5 new rules, 10 transactions categorized</text>
+<text x="54" y="142" font-size="14" xml:space="preserve">• Blue Bottle → Coffee &amp; Snacks: coffee roaster and café chain (3)</text>
+<text x="54" y="164" font-size="14" xml:space="preserve">• Metro Transit → Transport: city bus and rail fares (4)</text>
+<text x="54" y="186" font-size="14" xml:space="preserve">• Lakeside Cinema → Entertainment: movie theater (1)</text>
+<text x="54" y="208" font-size="14" xml:space="preserve">• Corner Mart → Miscellaneous: varies, convenience store (1)</text>
+<text x="54" y="230" font-size="14" xml:space="preserve">• Northwind Energy → Utilities: from rules.yaml (1)</text>
+<text x="54" y="252" font-size="14" xml:space="preserve">Not decided: 1: Harbor Property Group (no JSON object with a category</text>
+<text x="54" y="274" font-size="14" xml:space="preserve">in the reply)</text>
+<text x="54" y="296" font-size="14" xml:space="preserve">Left for your rules: 2 transactions</text>
+<text x="54" y="318" font-size="14" xml:space="preserve">Fix a rule in Actual → Rules.</text>
+<text x="660" y="342" font-size="11" text-anchor="end" class="m">02:04</text>
+</svg>

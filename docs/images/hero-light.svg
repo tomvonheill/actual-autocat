@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="t d">
+<title id="t">How actual-autocat works</title>
+<desc id="d">The bank line SQ *BLUE BOTTLE OAKLAND CA is looked up as a merchant, a model decides Coffee &amp; Snacks (coffee roaster and café chain), actual-autocat writes the Actual rule "payee is Blue Bottle, set category Coffee &amp; Snacks", and every future Blue Bottle transaction is categorized by Actual itself.</desc>
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;fill:#1f2328}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}
+.m{fill:#59636e}
+.a{fill:#0969da}
+.ok{fill:#1a7f37}
+.w{fill:#9a6700}
+.b{font-weight:600}
+.eb{font-size:10.5px;font-weight:700;letter-spacing:.06em;fill:#59636e}
+.num{font-size:10.5px;font-weight:700;fill:#ffffff}
+.card{fill:#ffffff;stroke:#d1d9e0}
+.arr{fill:none;stroke:#8c959f;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+</style>
+<rect x="0.5" y="0.5" width="959" height="339" rx="16" fill="#f6f8fa" stroke="#d1d9e0"/>
+<text x="28" y="50" font-size="21" class="b">Categorize each merchant once. Actual handles the rest.</text>
+<text x="28" y="76" font-size="13.5" class="m">A new merchant is looked up and decided by a model one time; the rule it writes categorizes every later transaction.</text>
+<rect class="card" x="28.5" y="104.5" width="151" height="171" rx="12"/>
+<circle cx="51" cy="126" r="9" fill="#0969da"/>
+<text x="51" y="129.8" text-anchor="middle" class="num">1</text>
+<text x="66" y="130" class="eb">BANK LINE</text>
+<path class="arr" d="M185 190 H197 M192.5 185.5 L197 190 L192.5 194.5"/>
+<rect class="card" x="202.5" y="104.5" width="171" height="171" rx="12"/>
+<circle cx="225" cy="126" r="9" fill="#0969da"/>
+<text x="225" y="129.8" text-anchor="middle" class="num">2</text>
+<text x="240" y="130" class="eb">MERCHANT LOOKUP</text>
+<path class="arr" d="M379 190 H391 M386.5 185.5 L391 190 L386.5 194.5"/>
+<rect class="card" x="396.5" y="104.5" width="171" height="171" rx="12"/>
+<circle cx="419" cy="126" r="9" fill="#0969da"/>
+<text x="419" y="129.8" text-anchor="middle" class="num">3</text>
+<text x="434" y="130" class="eb">MODEL DECIDES</text>
+<path class="arr" d="M573 190 H585 M580.5 185.5 L585 190 L580.5 194.5"/>
+<rect class="card" x="590.5" y="104.5" width="159" height="171" rx="12"/>
+<circle cx="613" cy="126" r="9" fill="#1a7f37"/>
+<text x="613" y="129.8" text-anchor="middle" class="num">4</text>
+<text x="628" y="130" class="eb">ACTUAL RULE</text>
+<path class="arr" d="M755 190 H767 M762.5 185.5 L767 190 L762.5 194.5"/>
+<rect class="card" x="772.5" y="104.5" width="159" height="171" rx="12"/>
+<circle cx="795" cy="126" r="9" fill="#1a7f37"/>
+<text x="795" y="129.8" text-anchor="middle" class="num">5</text>
+<text x="810" y="130" class="eb">FROM NOW ON</text>
+<rect x="42" y="150" width="124" height="54" rx="7" fill="#f6f8fa" stroke="#d1d9e0"/>
+<text x="52" y="172" font-size="12" class="mono">SQ *BLUE BOTTLE</text>
+<text x="52" y="190" font-size="12" class="mono">OAKLAND CA</text>
+<text x="42" y="226" font-size="12" class="m">Oct 21 · −$6.75</text>
+<rect x="42" y="240" width="104" height="22" rx="11" fill="#fff8c5"/>
+<text x="94" y="255" font-size="11.5" text-anchor="middle" class="w b">Uncategorized</text>
+<rect x="216" y="150" width="144" height="28" rx="14" fill="#f6f8fa" stroke="#d1d9e0"/>
+<text x="228" y="168" font-size="11" class="mono">BLUE BOTTLE OAKLAND</text>
+<text x="216" y="202" font-size="12.5" class="a b">Blue Bottle Coffee</text>
+<text x="216" y="219" font-size="11.5" class="m">Specialty coffee roaster</text>
+<text x="216" y="234" font-size="11.5" class="m">and cafés in the Bay Area</text>
+<rect x="216" y="246" width="96" height="7" rx="3.5" fill="#e6eaef"/>
+<rect x="216" y="259" width="132" height="6" rx="3" fill="#e6eaef"/>
+<rect x="410" y="150" width="134" height="28" rx="14" fill="#ddf4ff"/>
+<text x="477" y="168.5" font-size="13" text-anchor="middle" class="a b">Coffee &amp; Snacks</text>
+<text x="410" y="202" font-size="12.5">“coffee roaster and</text>
+<text x="410" y="219" font-size="12.5">café chain”</text>
+<line x1="410" y1="238.5" x2="554" y2="238.5" stroke="#d1d9e0"/>
+<text x="410" y="257" font-size="11.5" class="m">one request per merchant</text>
+<text x="604" y="158" font-size="10" class="eb">IF</text>
+<text x="622" y="158" font-size="12" class="m">payee is</text>
+<rect x="604" y="166" width="132" height="26" rx="6" fill="#f6f8fa" stroke="#d1d9e0"/>
+<text x="614" y="183.5" font-size="12.5" class="b">Blue Bottle</text>
+<text x="604" y="216" font-size="10" class="eb">THEN</text>
+<text x="646" y="216" font-size="12" class="m">set category</text>
+<rect x="604" y="224" width="132" height="26" rx="6" fill="#f6f8fa" stroke="#d1d9e0"/>
+<text x="614" y="241.5" font-size="12.5" class="b">Coffee &amp; Snacks</text>
+<text x="786" y="158" font-size="10.5" class="m mono">Oct 24</text>
+<text x="834" y="158" font-size="12">Blue Bottle</text>
+<circle cx="912" cy="154" r="7" fill="#dafbe1"/><path d="M908.8 154.2 l2.2 2.2 l4.2 -4.4" fill="none" stroke="#1a7f37" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="786" y1="169.5" x2="918" y2="169.5" stroke="#e6eaef"/>
+<text x="786" y="186" font-size="10.5" class="m mono">Oct 29</text>
+<text x="834" y="186" font-size="12">Blue Bottle</text>
+<circle cx="912" cy="182" r="7" fill="#dafbe1"/><path d="M908.8 182.2 l2.2 2.2 l4.2 -4.4" fill="none" stroke="#1a7f37" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="786" y1="197.5" x2="918" y2="197.5" stroke="#e6eaef"/>
+<text x="786" y="214" font-size="10.5" class="m mono">Nov 3</text>
+<text x="834" y="214" font-size="12">Blue Bottle</text>
+<circle cx="912" cy="210" r="7" fill="#dafbe1"/><path d="M908.8 210.2 l2.2 2.2 l4.2 -4.4" fill="none" stroke="#1a7f37" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="786" y="244" font-size="11.5" class="ok b">By Actual itself</text>
+<text x="786" y="260" font-size="11.5" class="m">no model call</text>
+<path d="M34 288 V294 H562 V288" fill="none" stroke="#0969da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="298" y="316" font-size="12.5" text-anchor="middle" class="b" fill="#0969da" style="fill:#0969da">Night one: search and the model, once per merchant</text>
+<path d="M596 288 V294 H926 V288" fill="none" stroke="#1a7f37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="761" y="316" font-size="12.5" text-anchor="middle" class="b" fill="#1a7f37" style="fill:#1a7f37">Every night after: Actual’s own rule</text>
+</svg>

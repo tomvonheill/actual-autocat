@@ -1,0 +1,7 @@
+node_modules/
+.env*
+!.env.example
+/config/
+/data/
+/docker-compose.yml
+.claude/settings.local.json

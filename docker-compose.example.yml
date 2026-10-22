@@ -1,0 +1,19 @@
+services:
+  autocat:
+    build: .
+    env_file: .env
+    volumes:
+      - ./config:/config:ro
+      - ./data:/data
+    # Lets the container reach servers on this machine as host.docker.internal
+    # (automatic on Docker Desktop; this line makes it work on Linux too).
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    # Restarts the scheduler after a crash or reboot. Keep SCHEDULE set when using
+    # "up -d": with SCHEDULE empty the container runs once, exits, and is
+    # restarted right away, over and over. Empty SCHEDULE is only for
+    # "docker compose run" or a host cron job.
+    restart: unless-stopped
+    # On stop, a run in progress finishes the payee it is writing, saves its state
+    # and closes the budget; this gives it time to do so before Docker kills it.
+    stop_grace_period: 30s
